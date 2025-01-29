@@ -33,7 +33,7 @@ jobs:
       - name: Prepare target
         run: |
           mkdir -p target \
-          && cp kernels/fuel-price-analysis.html target/
+          && cp kernels/*.html target/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
